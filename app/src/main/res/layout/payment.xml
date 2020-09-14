@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.views.CreditPurchaseStatementActivity"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/airtime_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/airtime_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/marikiti_logo"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/airtime_text"
+                android:text="Airtime"
+                android:layout_below="@id/airtime_image"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:padding="5dp"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/payment_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/payment_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/marikiti_logo"/>
+
+            <TextView
+                android:id="@+id/payment_text"
+                android:text="Payment"
+                android:layout_below="@id/payment_image"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:padding="5dp"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/sms_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/sms_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/marikiti_logo"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/sms_text"
+                android:text="SMS"
+                android:layout_below="@id/sms_image"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:padding="5dp"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/voice_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/voice_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/marikiti_logo"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/voice_text"
+                android:text="Voice"
+                android:layout_below="@id/voice_image"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:padding="5dp"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

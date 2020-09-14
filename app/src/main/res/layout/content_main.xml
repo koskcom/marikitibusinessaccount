@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgdepo"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:foregroundGravity="right"
+                android:gravity="right"
+                android:paddingRight="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/marikiti_logo" />
+
+            <TextView
+                style="@style/actionBarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/calibri"
+                android:text="Qr Code Generator"
+                android:textAlignment="textStart" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <View style="@style/Divider" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--
+        <include layout="@layout/activity_bank_transfer_dashboard" />
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.views.activities.businessacount.BusinessAccountActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/act_dimension">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edittext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:hint="Enter Trader Number"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/bg_edit_text_gray"
+
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/type_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_margin="2dp"
+                            android:entries="@array/type_string"
+                            android:prompt="@string/type_prompt"
+                            android:spinnerMode="dialog"
+                            android:overlapAnchor="false"
+                            android:textAlignment="center"
+                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/generate_button"
+                    android:text="Generate"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/type_spinner" />
+
+            <ImageView
+                android:id="@+id/image_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="281dp"
+                android:layout_below="@id/generate_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

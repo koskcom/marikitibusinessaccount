@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- row 1 -->
+
+    <TextView
+        android:id="@+id/textviewbsDate"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_view"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <!-- row 1 end -->
+
+
+    <!-- row 2 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- col 1 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textviewdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date:"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!-- col 1 end -->
+        <!-- col 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Total Withdrawals:"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <!-- col 2 end -->
+        <!-- col 3 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cBalanceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ksh 1234567"
+                android:padding="8dp"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- col 3 end -->
+    <View style="@style/Divider" />
+</LinearLayout>
